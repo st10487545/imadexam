@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="588dp"
+            android:layout_height="812dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/musically" />
+
+        <Button
+            android:id="@+id/btnAddSongToPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="142dp"
+            android:layout_marginEnd="179dp"
+            android:layout_marginBottom="456dp"
+            android:text="Add to Playlist"
+            android:textColorLink="#673AB7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/edtmyplaylist"
+            android:layout_width="241dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginBottom="97dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="             My Playlist"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddSongToPlaylist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/edtSongTitleDialog"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="48dp"
+            android:text="Song Title- "
+            app:layout_constraintBottom_toTopOf="@+id/edtArtistNameDialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/edtArtistNameDialog"
+            android:layout_width="154dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="20dp"
+            android:text="Artst name - "
+            app:layout_constraintBottom_toTopOf="@+id/ratingBarSongDialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/ratingBarSongDialog"
+            android:layout_width="151dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="34dp"
+            android:text="Rating "
+            app:layout_constraintBottom_toTopOf="@+id/edtCommentsDialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/edtCommentsDialog"
+            android:layout_width="154dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="100dp"
+            android:text="Comments"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

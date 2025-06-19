@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="588dp"
+            android:layout_height="812dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/musically" />
+
+        <TextView
+            android:id="@+id/tvSecondAcivitytitle"
+            android:layout_width="250dp"
+            android:layout_height="43dp"
+            android:text="              Your Playlist"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnDisplaySongs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDisplaySongs"
+            android:layout_width="192dp"
+            android:layout_height="49dp"
+            android:text="Display Songs"
+            app:layout_constraintBottom_toTopOf="@+id/tvSongListDisplay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCalculateAverageRating"
+            android:layout_width="186dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="138dp"
+            android:text="Get Average Rating"
+            app:layout_constraintBottom_toTopOf="@+id/btnReturnToMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnReturnToMain"
+            android:layout_width="174dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="72dp"
+            android:text="Return To Main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSongListDisplay"
+            android:layout_width="221dp"
+            android:layout_height="84dp"
+            android:layout_marginBottom="60dp"
+            android:hint="DISPLAY SONGS"
+            app:layout_constraintBottom_toTopOf="@+id/btnCalculateAverageRating"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
